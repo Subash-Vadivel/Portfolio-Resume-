@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/email.css' %}">
 
     <!-- script
     ================================================== -->
@@ -151,6 +152,22 @@ Your composition should be evenly spaced, ensuring no overcrowding of shapes, im
         </div>
 
     </section> <!-- end blog-content-wrap -->
+    <section class="blog-content-wrap" style="padding-left: 12em;">
+        <div class="row about-content" style="padding:0px 0px 0px 0px">
+            <div class="col-six tab-full left" >
+            <div class="subscribe" style="background-image:url({% static 'images/subs.jpg' %});background-repeat: no-repeat; background-size: cover;">
+    <h2 class="subscribe__title">Let's keep in touch</h2>
+    <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
+    <form class="form" method="post" action="">
+        {% csrf_token%}
+        <input type="email" class="form__email" name="gmail" placeholder="Enter your email address" />
+        <span style="padding-left:6em"><input class="form__button" type="submit"/></span>
+    </form>
+</div>
+</div>
+</div>
+</section>
+
 
 
     <!-- footer

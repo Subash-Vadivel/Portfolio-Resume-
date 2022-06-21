@@ -12,6 +12,9 @@ class project(models.Model):
 	project_Main_Img = models.ImageField(upload_to='img/')
 	details=models.CharField(max_length=200)
 	fork=models.CharField(max_length=200)
+class mail(models.Model):
+	gmail=models.CharField(max_length=100)
+	
     
 
     

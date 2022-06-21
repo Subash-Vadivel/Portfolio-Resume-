@@ -351,103 +351,40 @@ things.</p>
         <div class="row blog-content">
             <div class="col-full">
 
+
                 <div class="blog-list block-1-2 block-tab-full">
+                    
+                   {% for de in dest %}
                     <article class="col-block">
-
+                         
                         <div class="blog-date">
-                            <a href="/blog/">May 25, 2022</a>
+                            <a href="/blog/">{{de.date}}</a>
                         </div>
 
-                        <h2 class="h01"><a href="/blog/">Sharp Language.</a></h2>
-                        <p>
-                          The internet has provided all of us with an advanced class on using innuendo, piercing invective and anger to make a point with our writing.
-
-  Now, instead of simply seething or ranting, just about anyone can write an email or a social media post that absolutely destroys someone else.
-
-  To what end?
-
-  If the goal is to persuade, it’s clearly not working.
-
-  If we want to let someone know we’re upset, it might be easier to just say so.
-
-  The purpose of speech is to alert others to our point of view, and the purpose of conversation is to connect and to persuade.
-
-  It’s not clear that making language angrier or more cutting is helping much.</p>
+                        <h2 class="h01"><a href="/blog/">{{de.title}}</a></h2>
+                        <p>{{de.content}}
+                        </p>
 
                         <div class="blog-cat">
-                                <a href="/blog/">Literacy</a>
+                            <a href="/blog/">{{de.types}}</a>
                         </div>
+                        
+                    </article>
+                
+                    {% endfor %}
+                    
 
+              
+                  
+                </div> <!-- end blog-list -->
+
+            </div> <!-- end col-full -->
+       
+        </div> <!-- end blog-content -->
+   </section> 
 
                     </article>
-                    <article class="col-block">
-
-                        <div class="blog-date">
-                            <a href="/blog/">May 21, 2021</a>
-                        </div>
-
-                        <h2 class="h01"><a href="/blog/">The department of bad behavior.</a></h2>
-                        <p>
-                          What if organizations had a division that simply did the bad stuff? The people who were responsible for creating system updates that slow down old computers, that cover up bad behavior by employees, the people who dump pollution into the river when no one is watching…
-
-        If all the folks who invent dark patterns, lobby in secret, and gaslight whistleblowers all worked in the same department, we could watch them a lot more carefully.
-
-        After all, the lawyers have a department, and so do the customer service people. Couldn’t we have a VP of dirty tricks?
-
-        Alas, mixed incentives and short-term thinking mean that it’s unlikely we’ll ever be able to narrow it down to just a few people…      </p>
-
-                        <div class="blog-cat">
-                            <a href="/blog/">Personality</a>
-                        </div>
-
-
-                    </article>
-                    <article class="col-block">
-
-                        <div class="blog-date">
-                            <a href="/blog/">May 15, 2022</a>
-                        </div>
-                        <h2 class="h01"><a href="/blog/">Data, information and decisions</a></h2>
-                        <p>
-                          Data is everywhere, but turning it into information isn’t free.
-
-      It takes focus, effort, consultation and time.
-
-      More information is only useful if it helps you make a decision. Knowing the temperature on Saturn isn’t useful. Knowing it to even more accuracy is less useful. That’s because we’re not making any decisions that involve the temperature on another planet.
-
-      We’re surrounded by data that our spreadsheets or networks or cohorts seem to want us to be aware of. How many people clicked yesterday, or what someone wrote in a comment, what a backlist book sold or the foot traffic in that store vs. this store.
-
-      But if you’re not going to use the data to make a decision, don’t spend the time to expose yourself to it. It’s resistance at work.
-
-      If you can’t do anything with the data, it’s never going to be information.    </p>
-
-                        <div class="blog-cat">
-                            <a href="/blog/">Technical</a>
-                        </div>
-                    </article>
-                    <article class="col-block">
-
-                        <div class="blog-date">
-                            <a href="/blog/">May 10, 2022</a>
-                        </div>
-
-                        <h2 class="h01"><a href="/blog/">The Post-industrial collision</a></h2>
-                    <p>    Many knowledge-economy employees say that the main cause of dissatisfaction at work is lack of agency. Lack of control over our time and our decisions and our output is demeaning. It turns people into cogs.
-
-                  As the nature of work changes, innovation and small groups are adding far more value than the race to the bottom of industrial control can.
-
-                  So people are getting what they asked for. Autonomy. Responsibility instead of authority. The chance to speak up and be heard. Most of all, the opportunity to be on the hook.
-
-                  Not surprisingly, some people, particularly if they’ve been indoctrinated into the industrial mindset, don’t like this.
-
-                  They can’t ask, “just tell me what to do.” The search for an A, the hope to be picked by someone in charge, the desire for perfect–it’s gone. So is the deniability that comes with following instructions.
-
-                  Be careful what you hope for.</p>
-                        <div class="blog-cat">
-                            <a href="/blog/">Industry</a>
-                        </div>
-                    </article>
-
+                   
                 </div> <!-- end blog-list -->
 
             </div> <!-- end col-full -->
