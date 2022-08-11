@@ -46,7 +46,7 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="/home/"><img src="{% static 'images/logo.png' %}" alt="Homepage"></a>
+            <a class="site-logo" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt="Homepage"></a>
         </div>
 
         <nav class="header-nav-wrap">
@@ -358,15 +358,15 @@ things.</p>
                     <article class="col-block">
                          
                         <div class="blog-date">
-                            <a href="/blog/">{{de.date}}</a>
+                            <a href="{% url 'blog' %}">{{de.date}}</a>
                         </div>
 
-                        <h2 class="h01"><a href="/blog/">{{de.title}}</a></h2>
+                        <h2 class="h01"><a href="{% url 'blog' %}">{{de.title}}</a></h2>
                         <p>{{de.content}}
                         </p>
 
                         <div class="blog-cat">
-                            <a href="/blog/">{{de.types}}</a>
+                            <a href="{% url 'blog' %}">{{de.types}}</a>
                         </div>
                         
                     </article>
