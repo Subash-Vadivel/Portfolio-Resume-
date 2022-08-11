@@ -48,16 +48,16 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="/home/"><img src="{% static 'images/logo.png' %}" alt="Homepage"></a>
+            <a class="site-logo" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt="Homepage"></a>
         </div>
 
         <nav class="header-nav-wrap">
             <ul class="header-nav">
-                <li><a href="/home/#home" title="home">Home</a></li>
-                <li><a href="/home/#about" title="about">About</a></li>
-                <li><a href="/home/#works" title="works">Works</a></li>
-                <li class="current"><a href="/blog/" title="blog">Blog</a></li>
-                <li><a href="/home/#contact" title="contact">Contact</a></li>
+                <li><a href="{% url 'home' %}" title="home">Home</a></li>
+                <li><a href="{% url 'home' %}" title="about">About</a></li>
+                <li><a href="{% url 'home' %}" title="works">Works</a></li>
+                <li class="current"><a href="{% url 'blog' %}" title="blog">Blog</a></li>
+                <li><a href="{% url 'home' %}" title="contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -115,15 +115,15 @@ Your composition should be evenly spaced, ensuring no overcrowding of shapes, im
                     <article class="col-block">
                          
                         <div class="blog-date">
-                            <a href="/blog/">{{de.date}}</a>
+                            <a href="{% url 'blog' %}">{{de.date}}</a>
                         </div>
 
-                        <h2 class="h01"><a href="/blog/">{{de.title}}</a></h2>
+                        <h2 class="h01"><a href="{% url 'blog' %}">{{de.title}}</a></h2>
                         <p>{{de.content}}
                         </p>
 
                         <div class="blog-cat">
-                            <a href="/blog/">{{de.types}}</a>
+                            <a href="{% url 'blog' %}">{{de.types}}</a>
                         </div>
                         
                     </article>
