@@ -25,9 +25,9 @@ from django.conf.urls.static import static
 #from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', views.index),
-    path('blog/', views.blog),
-    path('feed/',views.feed),
+    path('home/', views.index,name='home'),
+    path('blog/', views.blog,name='blog'),
+    path('feed/',views.feed,name='feed'),
 #   url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
 #   url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 
